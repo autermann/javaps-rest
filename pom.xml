@@ -21,7 +21,7 @@
         <version.spring-boot>2.1.8.RELEASE</version.spring-boot>
         <version.jackson>2.10.1</version.jackson>
         <version.slf4j>1.7.29</version.slf4j>
-        <version.log4j>2.12.1</version.log4j>
+        <version.log4j>2.13.0</version.log4j>
         <version.wps>1.4.0</version.wps>
         <version.arctic-sea>7.2.0</version.arctic-sea>
         <version.java>8</version.java>
