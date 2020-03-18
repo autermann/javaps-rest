@@ -13,13 +13,11 @@
 
     <bean name="objectMapper" id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper" />
 
-    <bean class="org.n52.javaps.rest.serializer.ProcessSerializer"/>
+<!--    <bean class="org.n52.javaps.rest.serializer.ProcessSerializer"/>
     <bean class="org.n52.javaps.rest.serializer.StatusInfoSerializer"/>
     <bean class="org.n52.javaps.rest.serializer.ExceptionSerializer"/>
     <bean class="org.n52.javaps.rest.serializer.ResultSerializer"/>
-    <bean class="org.n52.javaps.rest.deserializer.ExecuteDeserializer"/>
-
-    <bean id="jsonBoundingBoxInputOutputHandler" class="org.n52.javaps.rest.io.JSONBoundingBoxInputOutputHandler"/>
+    <bean class="org.n52.javaps.rest.deserializer.ExecuteDeserializer"/>-->
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
