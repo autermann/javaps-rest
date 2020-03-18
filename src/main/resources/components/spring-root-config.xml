@@ -9,17 +9,17 @@
 
     <context:annotation-config/>
     <context:component-scan base-package="io.swagger"/>
-    <context:component-scan base-package="org.n52.wps.javaps"/>
-    
+    <context:component-scan base-package="org.n52.javaps"/>
+
     <bean name="objectMapper" id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper" />
 
-    <bean class="org.n52.wps.javaps.rest.serializer.ProcessSerializer"/>
-    <bean class="org.n52.wps.javaps.rest.serializer.StatusInfoSerializer"/>
-    <bean class="org.n52.wps.javaps.rest.serializer.ExceptionSerializer"/>
-    <bean class="org.n52.wps.javaps.rest.serializer.ResultSerializer"/>
-    <bean class="org.n52.wps.javaps.rest.deserializer.ExecuteDeserializer"/>
+    <bean class="org.n52.javaps.rest.serializer.ProcessSerializer"/>
+    <bean class="org.n52.javaps.rest.serializer.StatusInfoSerializer"/>
+    <bean class="org.n52.javaps.rest.serializer.ExceptionSerializer"/>
+    <bean class="org.n52.javaps.rest.serializer.ResultSerializer"/>
+    <bean class="org.n52.javaps.rest.deserializer.ExecuteDeserializer"/>
 
-    <bean id="jsonBoundingBoxInputOutputHandler" class="org.n52.javaps.io.bbox.json.JSONBoundingBoxInputOutputHandler"/>
+    <bean id="jsonBoundingBoxInputOutputHandler" class="org.n52.javaps.rest.io.JSONBoundingBoxInputOutputHandler"/>
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
