@@ -1,0 +1,53 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: javax.servlet:javax.servlet-api
+    versions:
+    - ">= 4.a, < 5"
+  - dependency-name: org.springframework.boot:spring-boot-autoconfigure
+    versions:
+    - 2.4.2
+    - 2.4.3
+    - 2.4.4
+  - dependency-name: org.apache.logging.log4j:log4j-slf4j-impl
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-web
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-core
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-api
+    versions:
+    - 2.14.0
+  - dependency-name: org.springframework:spring-beans
+    versions:
+    - 5.2.5.RELEASE
+  - dependency-name: org.springframework:spring-webmvc
+    versions:
+    - 5.2.5.RELEASE
+  - dependency-name: org.springframework:spring-web
+    versions:
+    - 5.2.5.RELEASE
+  - dependency-name: org.springframework:spring-context
+    versions:
+    - 5.2.5.RELEASE
+  - dependency-name: org.springframework:spring-core
+    versions:
+    - 5.2.5.RELEASE
+  - dependency-name: com.fasterxml.jackson.core:jackson-annotations
+    versions:
+    - 2.10.3
+  - dependency-name: com.fasterxml.jackson.core:jackson-databind
+    versions:
+    - 2.10.3
+  - dependency-name: com.fasterxml.jackson.core:jackson-core
+    versions:
+    - 2.10.3
